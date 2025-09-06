@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from './store.ts';
 import App from './App';
 import './index.css';
+import {BrowserRouter} from "react-router-dom";
 
 // Define a custom theme for Chakra UI
 const theme = extendTheme({
@@ -25,7 +26,9 @@ root.render(
     <StrictMode>
         <ChakraProvider theme={theme}>
             <Provider store={store}>
-                <App />
+                <BrowserRouter>
+                    <App />
+                </BrowserRouter>
             </Provider>
         </ChakraProvider>
     </StrictMode>
