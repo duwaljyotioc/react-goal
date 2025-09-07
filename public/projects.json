@@ -1,0 +1,296 @@
+[
+  {
+    "name": "Website Redesign",
+    "description": "Revamp the company website with modern UI/UX and responsive design.",
+    "assigneeName": "Alice Johnson",
+    "ownerName": "Bob Smith"
+  },
+  {
+    "name": "Mobile App Development",
+    "description": "Build a native mobile app for iOS and Android with push notifications.",
+    "assigneeName": "Carol Williams",
+    "ownerName": "David Brown"
+  },
+  {
+    "name": "API Integration",
+    "description": "Integrate third-party APIs for payment processing and analytics.",
+    "assigneeName": "Eve Davis",
+    "ownerName": "Frank Wilson"
+  },
+  {
+    "name": "Database Migration",
+    "description": "Migrate legacy database to a cloud-based solution for scalability.",
+    "assigneeName": "Grace Lee",
+    "ownerName": "Henry Taylor"
+  },
+  {
+    "name": "User Authentication System",
+    "description": "Implement OAuth2-based authentication with role-based access.",
+    "assigneeName": "Ivy Martinez",
+    "ownerName": "Jack Anderson"
+  },
+  {
+    "name": "E-commerce Platform",
+    "description": "Develop a full-stack e-commerce platform with cart and checkout.",
+    "assigneeName": "Kelly Thompson",
+    "ownerName": "Liam Garcia"
+  },
+  {
+    "name": "Task Automation Script",
+    "description": "Create scripts to automate repetitive tasks in the workflow.",
+    "assigneeName": "Mia Rodriguez",
+    "ownerName": "Noah Martinez"
+  },
+  {
+    "name": "Analytics Dashboard",
+    "description": "Build a dashboard to visualize user engagement metrics.",
+    "assigneeName": "Oliver White",
+    "ownerName": "Sophia Clark"
+  },
+  {
+    "name": "Security Audit",
+    "description": "Conduct a security audit to identify and fix vulnerabilities.",
+    "assigneeName": "Ava Lewis",
+    "ownerName": "Ethan Walker"
+  },
+  {
+    "name": "Content Management System",
+    "description": "Develop a CMS for managing blog posts and media content.",
+    "assigneeName": "Isabella Harris",
+    "ownerName": "James Young"
+  },
+  {
+    "name": "Performance Optimization",
+    "description": "Optimize frontend performance for faster page loads.",
+    "assigneeName": "Lucas King",
+    "ownerName": "Emma Scott"
+  },
+  {
+    "name": "Customer Support Chatbot",
+    "description": "Implement an AI-powered chatbot for customer support.",
+    "assigneeName": "Charlotte Green",
+    "ownerName": "William Adams"
+  },
+  {
+    "name": "Inventory Management",
+    "description": "Create a system to track inventory levels in real-time.",
+    "assigneeName": "Amelia Baker",
+    "ownerName": "Daniel Hill"
+  },
+  {
+    "name": "Email Marketing Campaign",
+    "description": "Design and automate email campaigns for user retention.",
+    "assigneeName": "Harper Nelson",
+    "ownerName": "Michael Carter"
+  },
+  {
+    "name": "Data Visualization Tool",
+    "description": "Build a tool for visualizing complex datasets interactively.",
+    "assigneeName": "Evelyn Mitchell",
+    "ownerName": "Alexander Perez"
+  },
+  {
+    "name": "Cloud Infrastructure Setup",
+    "description": "Set up AWS infrastructure for scalable app deployment.",
+    "assigneeName": "Benjamin Turner",
+    "ownerName": "Sofia Phillips"
+  },
+  {
+    "name": "SEO Optimization",
+    "description": "Improve website SEO with meta tags and sitemaps.",
+    "assigneeName": "Chloe Campbell",
+    "ownerName": "Joseph Gomez"
+  },
+  {
+    "name": "Payment Gateway Integration",
+    "description": "Integrate Stripe for secure payment processing.",
+    "assigneeName": "Aria Stewart",
+    "ownerName": "Matthew Rogers"
+  },
+  {
+    "name": "User Feedback System",
+    "description": "Create a system to collect and analyze user feedback.",
+    "assigneeName": "Lily Morgan",
+    "ownerName": "Samuel Reed"
+  },
+  {
+    "name": "Mobile Responsiveness",
+    "description": "Ensure the app is fully responsive on mobile devices.",
+    "assigneeName": "Zoe Bell",
+    "ownerName": "David Cook"
+  },
+  {
+    "name": "Task Scheduling Module",
+    "description": "Develop a module for scheduling and assigning tasks.",
+    "assigneeName": "Ella Parker",
+    "ownerName": "Andrew Bailey"
+  },
+  {
+    "name": "Real-Time Notifications",
+    "description": "Implement real-time notifications using WebSockets.",
+    "assigneeName": "Scarlett Price",
+    "ownerName": "Thomas Ward"
+  },
+  {
+    "name": "Accessibility Enhancements",
+    "description": "Improve app accessibility with ARIA labels and contrast.",
+    "assigneeName": "Avery Foster",
+    "ownerName": "Christopher Gray"
+  },
+  {
+    "name": "Unit Testing Suite",
+    "description": "Write unit tests for critical app components.",
+    "assigneeName": "Layla Brooks",
+    "ownerName": "Ryan Kelly"
+  },
+  {
+    "name": "CI/CD Pipeline",
+    "description": "Set up a CI/CD pipeline for automated deployments.",
+    "assigneeName": "Hannah Long",
+    "ownerName": "Steven Hayes"
+  },
+  {
+    "name": "User Profile Management",
+    "description": "Build a system for users to manage their profiles.",
+    "assigneeName": "Grace Cox",
+    "ownerName": "Patrick Bell"
+  },
+  {
+    "name": "Search Functionality",
+    "description": "Implement a search feature for projects and tasks.",
+    "assigneeName": "Penelope Rivera",
+    "ownerName": "Kevin Murphy"
+  },
+  {
+    "name": "Data Backup System",
+    "description": "Create a system for automated data backups.",
+    "assigneeName": "Violet Sanders",
+    "ownerName": "Brian Cox"
+  },
+  {
+    "name": "Multi-Language Support",
+    "description": "Add support for multiple languages in the app.",
+    "assigneeName": "Ruby Fisher",
+    "ownerName": "Edward Bennett"
+  },
+  {
+    "name": "Task Prioritization",
+    "description": "Develop a feature to prioritize tasks based on urgency.",
+    "assigneeName": "Aurora Dunn",
+    "ownerName": "George Russell"
+  },
+  {
+    "name": "Calendar Integration",
+    "description": "Integrate Google Calendar for task scheduling.",
+    "assigneeName": "Claire Ellis",
+    "ownerName": "Paul Watson"
+  },
+  {
+    "name": "File Upload System",
+    "description": "Create a system for uploading and managing files.",
+    "assigneeName": "Sadie Hunt",
+    "ownerName": "Mark Evans"
+  },
+  {
+    "name": "Role-Based Access Control",
+    "description": "Implement RBAC for viewer, editor, and admin roles.",
+    "assigneeName": "Lila Myers",
+    "ownerName": "Charles Cooper"
+  },
+  {
+    "name": "Analytics Reporting",
+    "description": "Generate reports for project and task analytics.",
+    "assigneeName": "Nora Ford",
+    "ownerName": "Philip Ross"
+  },
+  {
+    "name": "Error Monitoring",
+    "description": "Set up error tracking with Sentry for the app.",
+    "assigneeName": "Esme Stone",
+    "ownerName": "Anthony Barnes"
+  },
+  {
+    "name": "Push Notification System",
+    "description": "Implement push notifications for task updates.",
+    "assigneeName": "Freya Knight",
+    "ownerName": "Richard Foster"
+  },
+  {
+    "name": "Custom Theme Editor",
+    "description": "Build a feature to customize app themes.",
+    "assigneeName": "Iris Wells",
+    "ownerName": "Timothy Price"
+  },
+  {
+    "name": "Task Dependency Tracking",
+    "description": "Add support for tracking task dependencies.",
+    "assigneeName": "Delilah Cole",
+    "ownerName": "Jonathan Hughes"
+  },
+  {
+    "name": "Performance Monitoring",
+    "description": "Integrate performance monitoring with New Relic.",
+    "assigneeName": "Cora James",
+    "ownerName": "Eric Peterson"
+  },
+  {
+    "name": "Social Media Integration",
+    "description": "Add social media sharing for project updates.",
+    "assigneeName": "Hazel Dean",
+    "ownerName": "Brandon Morris"
+  },
+  {
+    "name": "Offline Mode Support",
+    "description": "Enable basic app functionality in offline mode.",
+    "assigneeName": "Willow Lane",
+    "ownerName": "Gregory Butler"
+  },
+  {
+    "name": "Audit Logging",
+    "description": "Implement logging for user actions and changes.",
+    "assigneeName": "Ivy Fox",
+    "ownerName": "Nicholas Rivera"
+  },
+  {
+    "name": "Task Time Tracking",
+    "description": "Add a feature to track time spent on tasks.",
+    "assigneeName": "Juniper Hayes",
+    "ownerName": "Scott Phillips"
+  },
+  {
+    "name": "Custom Dashboard Widgets",
+    "description": "Allow users to add custom widgets to their dashboard.",
+    "assigneeName": "Rose Perry",
+    "ownerName": "Jeffrey Brooks"
+  },
+  {
+    "name": "Team Collaboration Tools",
+    "description": "Build tools for team messaging and collaboration.",
+    "assigneeName": "Daisy Walsh",
+    "ownerName": "Kenneth Sullivan"
+  },
+  {
+    "name": "Automated Testing Framework",
+    "description": "Set up Cypress for end-to-end testing.",
+    "assigneeName": "Poppy Riley",
+    "ownerName": "Douglas Murray"
+  },
+  {
+    "name": "Data Export Feature",
+    "description": "Allow users to export project data as CSV.",
+    "assigneeName": "Fern Gordon",
+    "ownerName": "Raymond Diaz"
+  },
+  {
+    "name": "Onboarding Tutorial",
+    "description": "Create an interactive onboarding tutorial for new users.",
+    "assigneeName": "Laurel Bishop",
+    "ownerName": "Gary Stewart"
+  },
+  {
+    "name": "Project Archiving",
+    "description": "Implement a feature to archive completed projects.",
+    "assigneeName": "Magnolia Pierce",
+    "ownerName": "Wayne Coleman"
+  }
+]
