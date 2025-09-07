@@ -1,5 +1,5 @@
 import {Box, VStack, useColorModeValue} from "@chakra-ui/react";
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link,} from 'react-router-dom';
 
 interface LayoutProps {
     children: React.ReactNode;

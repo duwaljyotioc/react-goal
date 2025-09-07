@@ -20,7 +20,7 @@ const ListComponent = ({
             </Text>
             {entityList.map((entity) => (
                 <Box
-                    key={entity.name}
+                    key={entity[nameProp]}
                     p={4}
                     borderWidth="1px"
                     borderRadius="md"

@@ -1,6 +1,6 @@
 import './App.css'
 import {Box} from "@chakra-ui/react"
-import AppRoutes from "@/store/route.tsx";
+import AppRoutes from "@/route.tsx";
 import Layout from "@/components/Layout.tsx";
 
 
