@@ -4,10 +4,20 @@ import {
 } from '@chakra-ui/react';
 import Loading from "@/components/Loading.tsx";
 import ListComponent from "@/components/ListComponent.tsx";
+import {useDispatch, useSelector} from "react-redux";
+import {selectAllProjects} from "@/store/projectSlice.ts";
 
 const ProjectList = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [projects, setProjects] = useState([]);
+    const dispatch = useDispatch();
+    const { loading, error, entities } = useSelector((state) => ({
+        loading: state.projects.loading,
+        error: state.projects.error,
+        entities: selectAllProjects(state),
+    }));
+
+    console.log(entities)
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -19,6 +29,7 @@ const ProjectList = () => {
         fetchProjects();
     }, []);
 
+    console.log(entities)
     return (
         <Box p={4}>
             <ListComponent
