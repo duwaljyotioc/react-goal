@@ -5,36 +5,38 @@ import {
 import Loading from "@/components/Loading.tsx";
 import ListComponent from "@/components/ListComponent.tsx";
 import {useDispatch, useSelector} from "react-redux";
-import {selectAllProjects} from "@/store/projectSlice.ts";
+import {addProject, fetchProjects, selectAllProjects} from "@/store/projectSlice.ts";
 
 const ProjectList = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    const [projects, setProjects] = useState([]);
-    const dispatch = useDispatch();
+    const dispatchInstance = useDispatch();
     const { loading, error, entities } = useSelector((state) => ({
         loading: state.projects.loading,
         error: state.projects.error,
         entities: selectAllProjects(state),
     }));
 
-    console.log(entities)
-
     useEffect(() => {
-        const fetchProjects = async () => {
-            const response = await fetch('/projects.json');
-            const data = await response.json();
-            setIsLoading(false);
-            setProjects(data);
-        };
-        fetchProjects();
-    }, []);
+        console.log('calls thunk here')
+        // call the async thunk here
+        dispatchInstance(fetchProjects())
+            .unwrap()
+            .then(() => {
+                // dispatch(addProject({
+                //     id: 'temp-1',
+                //     name: 'Hero Project',
+                //     description: '...',
+                //     assigneeName: 'Alice',
+                //     ownerName: 'Bob'
+                // }));
+            })
+            .catch(console.error);
+    }, [dispatchInstance]);
 
-    console.log(entities)
     return (
         <Box p={4}>
             <ListComponent
-                isLoading={isLoading}
-                entityList={projects}
+                isLoading={loading}
+                entityList={entities}
                 entity={'Projects'}
                 nameProp={'name'}
                 entityType={'projects'}

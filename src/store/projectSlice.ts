@@ -9,14 +9,30 @@
 import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const projectsAdapter = createEntityAdapter({
-    selectId: (project) => project.name
+    // this is the way to format the data.
+    selectId: (project) => project.id
 })
 
-export const fetchProjects = createAsyncThunk('projects/fetchProjects', async () => {
-    const reponse = await fetchProjects('/projects.json');
-    if (!response.ok) throw new Error('Failed to fetch projects');
-    return response.json();
-})
+// by creating an asyncThunk, we are creating an asychronous actions to handle
+// fetchProject/pending
+// fetchProjects/fulfilled
+// fetchProjects/rejected
+
+export const fetchProjects = createAsyncThunk(
+    'projects/fetchProjects',
+    async (_, { rejectWithValue }) => {
+        try {
+            const res = await fetch('/projects.json'); // <-- NOT fetchProjects()
+            if (!res.ok) throw new Error('Failed to fetch projects');
+            const data = await res.json();
+
+            // Ensure each project has an id (adjust if your JSON already has ids)
+            return data.map((p: any) => ({ id: p.id ?? p.name, ...p }));
+        } catch (e: any) {
+            return rejectWithValue(e.message);
+        }
+    }
+);
 
 const projectsSlice = createSlice({
     name: 'projects',
@@ -26,7 +42,9 @@ const projectsSlice = createSlice({
     },
     extraReducers: (builder) => {
         builder
-            .addCase(fetchProjects.pending, (state) => { state.loading = true; })
+            .addCase(fetchProjects.pending, (state) => {
+                state.loading = true;
+            })
             .addCase(fetchProjects.fulfilled, (state, action) => {
                 state.loading = false;
                 projectsAdapter.setAll(state, action.payload);
