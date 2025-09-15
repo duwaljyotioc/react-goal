@@ -1,5 +1,6 @@
-import {Box, VStack, useColorModeValue} from "@chakra-ui/react";
+import {Box, VStack, useColorModeValue, HStack, Spacer} from "@chakra-ui/react";
 import { Link,} from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -10,8 +11,19 @@ const Layout = ({ children }: LayoutProps) => {
         <Box>
             <Box
                 height="3rem"
-                borderBottom="1px solid black">
-                Goal App
+                borderBottom="1px solid black"
+                display="flex"
+                alignItems="center"
+                px={4}
+                bg="blue.600"
+                color="white"
+            >
+                <HStack width="100%" justify="space-between">
+                    <Box fontWeight="bold" fontSize="lg" color="white">
+                        Goal App
+                    </Box>
+                    <ThemeToggle variant="button" size="sm" />
+                </HStack>
             </Box>
 
             <Box

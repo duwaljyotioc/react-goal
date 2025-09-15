@@ -66,3 +66,41 @@
 /*    background-color: #f9f9f9;*/
 /*  }*/
 /*}*/
+
+/* Theme system CSS variables */
+:root {
+  --color-background: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-primary: #2B6CB0;
+  --color-secondary: #4A5568;
+  --color-text: #1a202c;
+  --color-textSecondary: #4a5568;
+  --color-border: #e2e8f0;
+  --color-success: #38a169;
+  --color-warning: #d69e2e;
+  --color-error: #e53e3e;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --color-background: #0d1117;
+  --color-surface: #161b22;
+  --color-primary: #58a6ff;
+  --color-secondary: #8b949e;
+  --color-text: #f0f6fc;
+  --color-textSecondary: #8b949e;
+  --color-border: #30363d;
+  --color-success: #3fb950;
+  --color-warning: #d29922;
+  --color-error: #f85149;
+}
+
+/* Base body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background) !important;
+    color: var(--color-text) !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

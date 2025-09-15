@@ -6,6 +6,7 @@ import store from './store.ts';
 import App from './App';
 import './index.css';
 import {BrowserRouter} from "react-router-dom";
+import { ThemeProvider } from './contexts/ThemeContext';
 
 // Define a custom theme for Chakra UI
 const theme = extendTheme({
@@ -24,12 +25,14 @@ const theme = extendTheme({
 const root = createRoot(document.getElementById('root')!);
 root.render(
     <StrictMode>
-        <ChakraProvider theme={theme}>
-            <Provider store={store}>
-                <BrowserRouter>
-                    <App />
-                </BrowserRouter>
-            </Provider>
-        </ChakraProvider>
+        <ThemeProvider>
+            <ChakraProvider theme={theme}>
+                <Provider store={store}>
+                    <BrowserRouter>
+                        <App />
+                    </BrowserRouter>
+                </Provider>
+            </ChakraProvider>
+        </ThemeProvider>
     </StrictMode>
 );
