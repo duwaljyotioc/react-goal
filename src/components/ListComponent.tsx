@@ -1,9 +1,18 @@
 import { useRef, useEffect } from 'react';
 import {
-    Box, VStack, Text, Table, Stack, Spinner, Alert, AlertIcon, Button
+    Box, VStack, Text, Table, Stack, Spinner, Alert, AlertIcon, Button, Input
 } from '@chakra-ui/react';
 import Loading from "@/components/Loading.tsx";
 import {useNavigate} from "react-router-dom";
+
+type ListComponentProps = {
+    entityList: any[];
+    entityType: string;
+    entity: any;
+    isLoading: boolean;
+    nameProp: string;
+    addEntityRoute?: string;
+};
 
 const ListComponent = ({
                            entityList,
@@ -12,7 +21,7 @@ const ListComponent = ({
                            isLoading,
                            nameProp,
                            addEntityRoute,
-                       }) => {
+                       }: ListComponentProps) => {
     // useRef for scroll management - doesn't cause re-renders
     const scrollContainerRef = useRef(null);
     const scrollToTopRef = useRef(null);
@@ -65,6 +74,11 @@ const ListComponent = ({
                         Add {entity}
                       </Button>
                 }
+
+                <Input
+                    placeholder="Type something here..."
+                    maxWidth = '25%'
+                />
             </Box>
 
             {/* Scroll anchor for top */}

@@ -5,6 +5,7 @@ import ListComponent from "@/components/ListComponent.tsx";
 const UserList = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [users, setUsers] = useState([]);
+    const [memoizedUsers, setMemoizedUsers] = useState([]);
 
     useEffect(() => {
         const fetchProjects = async () => {
