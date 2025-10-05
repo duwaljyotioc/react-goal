@@ -60,6 +60,17 @@ const Layout = ({ children }: LayoutProps) => {
                         >
                             Users
                         </Box>
+                        {/*<Box*/}
+                        {/*    as={Link}*/}
+                        {/*    to="/useref-examples"*/}
+                        {/*    width="100%"*/}
+                        {/*    p={2}*/}
+                        {/*    borderRadius="md"*/}
+                        {/*    _hover={{ bg: useColorModeValue('gray.200', 'gray.600') }}*/}
+                        {/*    _activeLink={{ fontWeight: 'bold', color: 'brand.500' }}*/}
+                        {/*>*/}
+                        {/*    useRef Examples*/}
+                        {/*</Box>*/}
                     </VStack>
                 </Box>
 

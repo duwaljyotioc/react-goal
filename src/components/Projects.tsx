@@ -4,6 +4,8 @@ import {
 } from '@chakra-ui/react';
 import Loading from "@/components/Loading.tsx";
 import ListComponent from "@/components/ListComponent.tsx";
+import AddProjectForm from "@/components/AddProjectForm.tsx";
+import TimerComponent from "@/components/TimerComponent.tsx";
 import {useDispatch, useSelector} from "react-redux";
 import {addProject, fetchProjects, selectAllProjects} from "@/store/projectSlice.ts";
 
@@ -34,13 +36,18 @@ const ProjectList = () => {
 
     return (
         <Box p={4}>
-            <ListComponent
-                isLoading={loading}
-                entityList={entities}
-                entity={'Projects'}
-                nameProp={'name'}
-                entityType={'projects'}
-            ></ListComponent>
+            <VStack spacing={6} align="stretch">
+                {/*<TimerComponent />*/}
+                {/*<AddProjectForm onAddProject={handleAddProject} />*/}
+                <ListComponent
+                    isLoading={loading}
+                    entityList={entities}
+                    entity={'Projects'}
+                    nameProp={'name'}
+                    entityType={'projects'}
+                    addEntityRoute={'add/'}
+                />
+            </VStack>
         </Box>
     )
 }
